@@ -2,8 +2,6 @@
 
 {% block nav %}
 <li><a href="index.html" class="active">Home</a></li>
-<!--<li><a href="CropRecommendation.html">Crop</a></li>-->
-<!--<li><a href="FertilizerRecommendation.html">Fertilizer</a></li>-->
 <li><a href="PesticideRecommendation.html">Pesticide</a></li>
 {% endblock %}
 
@@ -37,20 +35,6 @@
         </div>
         <img id="ps-1" src="{{ url_for('static', filename='img/table-set.jpeg') }}" alt="Table Set"
              class="tm-table-set img-responsive" width="100%">
-        <script>
-
-            var imageSources = ["E:\FarmEasyOnline\static\img\1r.jpg"]
-
-            var index = 0;
-            setInterval (function(){
-            if (index === imageSources.length) {
-                index = 0;
-             }
-            document.getElementById("ps-1").src = imageSources[index];
-            index++;
-            } , 2000);
-
-        </script>
     </div>
 </section>
 <div class="tm-main-section light-gray-bg">

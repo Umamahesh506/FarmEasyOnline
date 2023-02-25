@@ -1,6 +1,5 @@
 from flask import Flask, render_template, request, Markup
 import pandas as pd
-from utils.fertilizer import fertilizer_dict
 import os
 import numpy as np
 from keras.preprocessing import image
